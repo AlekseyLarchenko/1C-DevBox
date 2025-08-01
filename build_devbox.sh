@@ -8,3 +8,18 @@ docker build --build-arg ONEC_USERNAME=${ONEC_USERNAME} \
   -f client/Dockerfile .
 
 docker push $DOCKER_REGISTRY_URL/devbox:$ONEC_VERSION
+
+docker build --build-arg DOCKER_REGISTRY_URL=${DOCKER_REGISTRY_URL} \
+  --build-arg ONEC_VERSION=$ONEC_VERSION \
+  -t ${DOCKER_REGISTRY_URL}/devbox-vnc:${ONEC_VERSION} \
+  -f client-vnc/Dockerfile .
+
+docker push $DOCKER_REGISTRY_URL/devbox-vnc:$ONEC_VERSION
+
+docker build --build-arg DOCKER_REGISTRY_URL=${DOCKER_REGISTRY_URL} \
+  --build-arg BASE_IMAGE=devbox-vnc\
+  --build-arg BASE_TAG=$ONEC_VERSION \
+  -t ${DOCKER_REGISTRY_URL}/test-runner:$ONEC_VERSION \
+  -f test_runner/Dockerfile .
+
+docker push $DOCKER_REGISTRY_URL/test-runner:$ONEC_VERSION

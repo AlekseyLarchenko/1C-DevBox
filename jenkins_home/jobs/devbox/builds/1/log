@@ -1,0 +1,87 @@
+Started by user [8mha:////4Jyuv28MRgWmiW+Rrkjd7PiAhKsoiu1AlHdC2469aNblAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[8mha:////4I8yIaE/vfbZKkhy3CyK5l6g7Jf3LRlwMTI+m6wt991NAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4BeQMLYBbYEoeZoH40nylzTsu+BBHCom2CalIVvYsxO1AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] stage
+[8mha:////4L1s78jYH3oHX0ZJVM51y7bx/igYEkooj2hJT8Jd+3d7AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] { (Run in Container)
+[8mha:////4LwM37AlYLPDUjHf+jeUodAImqTiAAinBC9J0freevtyAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4JKpWZfQjM50352sPFvGKreAns6pNWZWuU/m83KPJ0/LAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/ZTUsqT8Cn0AFbWQGsYAAAA=[0mdevbox in /home/aleksey/project/1C-DevBox/agent_home/workspace/devbox
+[8mha:////4GUQQ+1lLQcbM52YjXh0LSAVsqBXkQu6gBrIVc231++gAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4D1kwybQCOcs7MqxFE1io6q/ayu2RkxFRuhJj1RFKuLWAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/QeSFDiovAAAAA==[0m[Pipeline] }
+[8mha:////4M4kPpQK+Xr4Iawz1jTvbaOwDKOsMYOC9SdANkIRp5HKAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbmZgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHOMBdihdv8B+dJhs7wAAAA=[0m[Pipeline] // node
+[8mha:////4Ocq5OiXWlRjCjqNmR6yLSgNvFhSfWlFpTK0KFTKFzHoAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTb2BhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j/fywb5vAAAAA==[0m[Pipeline] }
+[8mha:////4GUbu2HGxcLgM4zFyc3zCiX12lnRiYcxT4Fk3icB1UYeAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIBUSIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny3VaQ7T8mviFMvQAAAA==[0m[Pipeline] // stage
+[8mha:////4IfsA5WT5SxySyjNe82TT/M9sDfq2hGRTz2Pd4UPlqdwAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSj0CIqWssNLzCxMU6su2BfSCpexNf4A4ZIVGy1s9Jqni+oUoQDRSc6i73H1HoxhNHlJiaK/SXQJDo6i5YwUbBC2UmRsccFFbGFJUUJKwlri22g5NExbGSn77oOGl194pi3vYTSmxs8oJDZzDryF+YI2+toEuHP81cA88BQ7BjKpvkcqzdQ/cNywQAAAA==[0m[Pipeline] stage
+[8mha:////4Pi3VrEzLqvUVxbiZioqZ5DxeMIF2dU/0ctCJKtkjp1DAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] { (Generate Allure)
+Stage "Generate Allure" skipped due to earlier failure(s)
+[8mha:////4BgdveDDxVIELiwtTS1ErQspqvu8p5cu+RrHunL9QglsAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud19ah/eeSmYHb4AAAA=[0m[Pipeline] getContext
+[8mha:////4KegEQy7rpnqr10rm+HsDcre/T4juYLQEdS1HHV3uiENAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BoOEdWO+AAAA[0m[Pipeline] }
+[8mha:////4MDybJJORTeSoMiVxQHnSxgXSHWRK7kBLGUYocCdPsr+AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyKawcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfnAYgMb4AAAA=[0m[Pipeline] // stage
+[8mha:////4LrC3j1Q6rCxwpOpZAmZaHGQiE5KdLFBd76aq2FXUjiMAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPEHtmtL0AAAA=[0m[Pipeline] End of Pipeline
+Also:   hudson.remoting.ProxyException: org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 14e2a6fb-8fb4-4e72-8e83-e2644073b763
+hudson.remoting.ProxyException: java.net.MalformedURLException: unknown protocol: localhost
+	at java.base/java.net.URL.<init>(Unknown Source)
+	at java.base/java.net.URL.<init>(Unknown Source)
+	at java.base/java.net.URL.<init>(Unknown Source)
+	at PluginClassLoader for docker-commons//org.jenkinsci.plugins.docker.commons.credentials.DockerRegistryEndpoint.getEffectiveUrl(DockerRegistryEndpoint.java:159)
+	at PluginClassLoader for docker-commons//org.jenkinsci.plugins.docker.commons.credentials.DockerRegistryEndpoint.imageName(DockerRegistryEndpoint.java:339)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.sandbox.DefaultInvoker.methodCall(DefaultInvoker.java:20)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.LoggingInvoker.methodCall(LoggingInvoker.java:118)
+	at org.jenkinsci.plugins.docker.workflow.Docker$Image.toQualifiedImageName(Docker.groovy:117)
+	at org.jenkinsci.plugins.docker.workflow.Docker$Image.imageName(Docker.groovy:121)
+	at org.jenkinsci.plugins.docker.workflow.Docker$Image.inside(Docker.groovy:126)
+	at org.jenkinsci.plugins.docker.workflow.Docker.node(Docker.groovy:66)
+	at org.jenkinsci.plugins.docker.workflow.Docker$Image.inside(Docker.groovy:125)
+	at org.jenkinsci.plugins.docker.workflow.declarative.DockerPipelineScript.runImage(DockerPipelineScript.groovy:53)
+	at org.jenkinsci.plugins.docker.workflow.declarative.AbstractDockerPipelineScript.configureRegistry(AbstractDockerPipelineScript.groovy:58)
+	at org.jenkinsci.plugins.docker.workflow.declarative.AbstractDockerPipelineScript.run(AbstractDockerPipelineScript.groovy:46)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.agent.CheckoutScript.checkoutAndRun(CheckoutScript.groovy:66)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.agent.CheckoutScript.doCheckout2(CheckoutScript.groovy:46)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.LabelScript.run(LabelScript.groovy:49)
+	at ___cps.transform___(Native Method)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:90)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:114)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:83)
+	at jdk.internal.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.LocalVariableBlock$LocalVariable.get(LocalVariableBlock.java:39)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.LocalVariableBlock.evalLValue(LocalVariableBlock.java:28)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock$BlockImpl.eval(LValueBlock.java:55)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock.eval(LValueBlock.java:16)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:147)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:17)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:49)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:181)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:437)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:345)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:298)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService.lambda$wrap$4(CpsVmExecutorService.java:140)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:139)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at jenkins.util.ErrorLoggingExecutorService.lambda$wrap$0(ErrorLoggingExecutorService.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.call(CpsVmExecutorService.java:53)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.call(CpsVmExecutorService.java:50)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:136)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:275)
+	at PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService.lambda$categoryThreadFactory$0(CpsVmExecutorService.java:50)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Finished: FAILURE

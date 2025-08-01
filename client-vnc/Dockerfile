@@ -25,10 +25,10 @@ RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     dirmngr \
     gnupg \
-  && echo "deb http://http.debian.net/debian/ bullseye main contrib non-free" > /etc/apt/sources.list \
-  && echo "deb http://http.debian.net/debian/ bullseye-backports main" >> /etc/apt/sources.list \
-  && echo "deb http://http.debian.net/debian/ bullseye-proposed-updates main contrib non-free" >> /etc/apt/sources.list \
-  && echo "deb http://security.debian.org/debian-security/ bullseye-security main contrib non-free" >> /etc/apt/sources.list \
+  # Исправленные репозитории Debian
+  && echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list \
+  && echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list \
+  && echo "deb http://security.debian.org/debian-security bullseye-security main contrib non-free" >> /etc/apt/sources.list \
   && echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections \
   && apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -49,7 +49,7 @@ RUN apt-get update \
       x11vnc \
       iproute2 \
       libglu1-mesa \
-  # Install libpng12-0 from xenial
+  # Остальная часть Dockerfile остается без изменений
   && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40976EAF437D05B5 \
   && echo "deb http://security.ubuntu.com/ubuntu xenial-security main" > /etc/apt/sources.list.d/xenial-security.list \
   && apt-get update \
@@ -57,7 +57,6 @@ RUN apt-get update \
       libpng12-0 \
   && rm -rf  /etc/apt/sources.list.d/xenial-security.list \
   && apt-get update \
-  # Install libwebkitgtk from stretch
   && echo "deb http://archive.debian.org/debian/ stretch main contrib non-free" > /etc/apt/sources.list.d/stretch.list \
   && apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -68,7 +67,8 @@ RUN apt-get update \
     /var/lib/apt/lists/* \
     /var/cache/debconf \
   && localedef -i ru_RU -c -f UTF-8 -A /usr/share/locale/locale.alias ru_RU.UTF-8
-ENV LANG ru_RU.UTF-8
+
+ENV LANG=ru_RU.UTF-8
 
 # remove DST Root CA X3 cert if it exists
 COPY ./scripts/remove-dst-root-ca-x3.sh /remove-dst-root-ca-x3.sh

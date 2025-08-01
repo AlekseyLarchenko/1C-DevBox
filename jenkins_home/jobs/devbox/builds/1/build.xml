@@ -1,0 +1,375 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1540.v295eccc9778f">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.32-481.v75f035fdc894">
+      <queuingDurationMillis>68</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>9</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@752.vdddedf804e72">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2258.v4e96d2b_da_f9b_">
+      <stagesUUID>3fedb42f-d927-4129-8b80-919f09ed6f07</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2258.v4e96d2b_da_f9b_">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <agent>
+                  <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTClosureMap">
+                    <variables class="linked-hash-map">
+                      <entry>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                          <key>image</key>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          <value class="string">localhost:5000/test-runner:8.3.26.1656</value>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                      </entry>
+                      <entry>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                          <key>args</key>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          <value class="string">-u root -v $WORKSPACE:/workspace:rw -p 5900:5900</value>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                      </entry>
+                    </variables>
+                  </variables>
+                  <agentType>
+                    <key>docker</key>
+                  </agentType>
+                </agent>
+                <name>Run in Container</name>
+                <stages>
+                  <stages>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>prep</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                              <name>script</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>scriptBlock</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">env.BUILD_DIR = &apos;/build&apos;
+                            sh &apos;mkdir $BUILD_DIR&apos;</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>git</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>sh</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>script</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">git clone -v https://gitflic.ru/project/nivanchenko/otus_arch_demo1.git $BUILD_DIR/repo</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>build</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>sh</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>script</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">vrunner init-dev --ibcmd --src=$BUILD_DIR/repo/src/cf --ibconnection /F$BUILD_DIR/ib</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>runTest</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                              <name>script</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>scriptBlock</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">sh &quot;&quot;&quot;
+                            ibsrv --db-path=$BUILD_DIR/ib --name=ib &amp;
+                            sleep 15
+                            cd $BUILD_DIR/repo
+                            vrunner vanessa --ibconnection &quot;/Slocalhost\\ib&quot;
+                            cp -r $BUILD_DIR/repo/build/reports/allurereport/БСП /workspace/allure-report
+                        &quot;&quot;&quot;</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                  </stages>
+                  <uuid>46b5dfc4-887a-4573-8eaf-a78db54d2ef0</uuid>
+                </stages>
+                <branches/>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <agent>
+                  <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                    <value class="string">devbox</value>
+                  </variables>
+                  <agentType>
+                    <key>label</key>
+                  </agentType>
+                </agent>
+                <name>Generate Allure</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>allure</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>includeProperties</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">false</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>jdk</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string"></value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>properties</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${[]}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>reportBuildPolicy</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">ALWAYS</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>results</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${[[path: &apos;allure-report&apos;]]}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>3fedb42f-d927-4129-8b80-919f09ed6f07</uuid>
+          </stages>
+          <agent>
+            <agentType>
+              <key>none</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@4173.v4a_1fd14533f1">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.2.32-481.v75f035fdc894">
+      <queuingDurationMillis>75</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>56</buildableDurationMillis>
+      <waitingDurationMillis>17</waitingDurationMillis>
+      <executingDurationMillis>1355</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>5</queueId>
+  <timestamp>1754035346926</timestamp>
+  <startTime>1754035346949</startTime>
+  <result>FAILURE</result>
+  <duration>8591</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>pipeline {
+    agent none
+
+    stages {
+        
+        stage(&apos;Run in Container&apos;) {
+            agent {
+                docker {
+                    image &apos;localhost:5000/test-runner:8.3.26.1656&apos;
+                    args &apos;-u root -v $WORKSPACE:/workspace:rw -p 5900:5900&apos;
+                }
+            }
+            stages {
+                stage(&apos;prep&apos;) {
+                    steps {
+                         script {
+                            env.BUILD_DIR = &apos;/build&apos;
+                            sh &apos;mkdir $BUILD_DIR&apos;
+                         }
+                    }
+                }
+                stage(&apos;git&apos;) {
+                    steps {
+                        sh &apos;git clone -v https://gitflic.ru/project/nivanchenko/otus_arch_demo1.git $BUILD_DIR/repo&apos;
+                    }
+                }
+                stage(&apos;build&apos;) {
+                    steps {
+                       sh &apos;vrunner init-dev --ibcmd --src=$BUILD_DIR/repo/src/cf --ibconnection /F$BUILD_DIR/ib&apos;
+                    }
+                }
+                stage(&apos;runTest&apos;) {
+                    steps {
+                        script {
+            
+                        sh &quot;&quot;&quot;
+                            ibsrv --db-path=$BUILD_DIR/ib --name=ib &amp;
+                            sleep 15
+                            cd $BUILD_DIR/repo
+                            vrunner vanessa --ibconnection &quot;/Slocalhost\\ib&quot;
+                            cp -r $BUILD_DIR/repo/build/reports/allurereport/БСП /workspace/allure-report
+                        &quot;&quot;&quot;
+                        }
+                    }
+                }
+            }
+        }
+    
+        stage(&apos;Generate Allure&apos;) {
+            agent { label &apos;devbox&apos; }
+            steps {
+                allure([
+                    includeProperties: false,
+                    jdk: &apos;&apos;,
+                    properties: [],
+                    reportBuildPolicy: &apos;ALWAYS&apos;,
+                    results: [[path: &apos;allure-report&apos;]]
+                ])
+            }
+        }
+        
+    }
+}</script>
+    <loadedScripts class="linked-hash-map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>622611033</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>7347557274</long>
+      </entry>
+      <entry>
+        <string>runQueue</string>
+        <long>2584453295</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>6501871717</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>1450612559</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>624364470</long>
+      </entry>
+    </timings>
+    <internalCalls class="sorted-set">
+      <string>org.jenkinsci.plugins.docker.commons.credentials.DockerRegistryEndpoint.&lt;init&gt;</string>
+      <string>org.jenkinsci.plugins.docker.commons.credentials.DockerRegistryEndpoint.imageName</string>
+      <string>org.jenkinsci.plugins.docker.workflow.declarative.DeclarativeDockerUtils$DockerRegistry.build</string>
+      <string>org.jenkinsci.plugins.docker.workflow.declarative.DeclarativeDockerUtils$DockerRegistry.hasData</string>
+      <string>org.jenkinsci.plugins.docker.workflow.declarative.DeclarativeDockerUtils.getLabelScript</string>
+      <string>org.jenkinsci.plugins.pipeline.StageStatus.TAG_NAME</string>
+    </internalCalls>
+    <sandbox>true</sandbox>
+    <iota>16</iota>
+    <head>1:16</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+    <storageDir>workflow-completed</storageDir>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

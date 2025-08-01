@@ -1,0 +1,104 @@
+Started by user [8mha:////4Jyuv28MRgWmiW+Rrkjd7PiAhKsoiu1AlHdC2469aNblAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[8mha:////4I8yIaE/vfbZKkhy3CyK5l6g7Jf3LRlwMTI+m6wt991NAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4BeQMLYBbYEoeZoH40nylzTsu+BBHCom2CalIVvYsxO1AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] withEnv
+[8mha:////4L1s78jYH3oHX0ZJVM51y7bx/igYEkooj2hJT8Jd+3d7AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4LwM37AlYLPDUjHf+jeUodAImqTiAAinBC9J0freevtyAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4GUQQ+1lLQcbM52YjXh0LSAVsqBXkQu6gBrIVc231++gAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Prepare and Run Tests)
+[8mha:////4IpnCHKrelgt/gs9W1BsZXDtpqPKREoONVSF2WgmtXanAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4JKpWZfQjM50352sPFvGKreAns6pNWZWuU/m83KPJ0/LAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQi/ZTUsqT8Cn0AFbWQGsYAAAA=[0mdevbox in /home/aleksey/project/1C-DevBox/agent_home/workspace/devbox
+[8mha:////4I02xEc0pbF5wzJj/D0EAyCW+AOZGOM9fwIebH3c7A5IAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4MHRZlRdEDI5gqyy/ZEIFtKCcMyMB/SQH8oIPUDtVlCeAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] withEnv
+[8mha:////4IgaZbnBYIhb7uIE0M5DfUTTjlnO9HqddR/9TB5EUghVAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] {
+[8mha:////4CiCp/pcUCfwELyhIX5qywhqvGp2sRZhK++HSVe2QJnHAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] withDockerRegistry
+[8mha:////4Pi3VrEzLqvUVxbiZioqZ5DxeMIF2dU/0ctCJKtkjp1DAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4BgdveDDxVIELiwtTS1ErQspqvu8p5cu+RrHunL9QglsAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud19ah/eeSmYHb4AAAA=[0m[Pipeline] isUnix
+[8mha:////4EA7xDDh5Q1W9m7k17lGFqahMFsFsYr+0gfzX1AuPFE1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAXOJEdTCAAAA[0m[Pipeline] withEnv
+[8mha:////4Fy8p2rBsvjfkakN50uzMt4LiOyThMRcAIvOLmpCsSztAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4FHzXFxYzzRn45QJyKXV4NmWNfQY/X3yqVFSoyYfOXnxAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] sh
++ docker inspect -f . localhost:5000/test-runner:8.3.26.1656
+.
+[8mha:////4ArTRqIq7ZfmEvcuyhafpQ2c5Xb4JzqnliSYf7bDXRWhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGOY4V7vgAAAA==[0m[Pipeline] }
+[8mha:////4Guj/yeEeLPlluPVu15EZsjOhYHcXM0sCbYqQTjNQsjIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJAokRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3N4dT9vgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4L24DSmx9ayyIvWbUztxq931iEgzJeoZIS2MLxphoRyNAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUsCHE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAa2aj2jCAAAA[0m[Pipeline] withDockerContainer
+devbox does not seem to be running inside a container
+$ docker run -t -d -u 1000:1000 -u root -v $WORKSPACE:/workspace:rw -p 5900:5900 -e DISPLAY=$DISPLAY -e DISPLAY_WIDTH=$DISPLAY_WIDTH -e DISPLAY_HEIGHT=$DISPLAY_HEIGHT --entrypoint= -w /home/aleksey/project/1C-DevBox/agent_home/workspace/devbox -v /home/aleksey/project/1C-DevBox/agent_home/workspace/devbox:/home/aleksey/project/1C-DevBox/agent_home/workspace/devbox:rw,z -v /home/aleksey/project/1C-DevBox/agent_home/workspace/devbox@tmp:/home/aleksey/project/1C-DevBox/agent_home/workspace/devbox@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** localhost:5000/test-runner:8.3.26.1656 cat
+$ docker top e1edc5742f885bdd3c951ca647a326c84aabadf252020aab51dbe5bf621fc204 -eo pid,comm
+[8mha:////4PkvDhO6OBIYTJnk8FrharbY7tC5rGh4n/lSPlxoBxZxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] {
+[8mha:////4MxrYHOg3JVJSS0dlh/nNUCexYMkGYPBU+DmYA5IZF8bAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] script
+[8mha:////4AvL/Fi28LVLUo9b1P4vi8ZTbeD+3JAtBU0h9+voLDuJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] {
+[8mha:////4AJHa5PtuscEONJMHcB0lU2qFoc9SQPpuyaOMVEZDSKVAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyE0vHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3w5BRkb4AAAA=[0m[Pipeline] sh
++ mkdir -p /build
++ echo Workspace contents:
+Workspace contents:
++ ls -la /workspace
+total 8
+drwxrwxr-x 2 1000 1000 4096 авг  1 08:09 .
+drwxr-xr-x 1 root root 4096 авг  1 08:14 ..
+[8mha:////4O+3ec8l+dmTa9HkVUDhv+iF00dh1kKe0oExLdz10CobAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaNG7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPYJ6rb91N6/AQQGEN6+AAAA[0m[Pipeline] sh
++ git clone -v https://gitflic.ru/project/nivanchenko/otus_arch_demo1.git /build/repo
+Cloning into '/build/repo'...
+POST git-upload-pack (122 bytes)
+POST git-upload-pack (275 bytes)
+[8mha:////4OfWkooa064z4/7tUGkkl8PKZAJKvX/MWBghOkJ+mKijAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaNHEyTq6ExS/AFhFK3qNApZNf5K/5D6JNnLzDzT13Oc8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALNPULftp/b+DUU3C8e+AAAA[0m[Pipeline] sh
++ vrunner init-dev --ibcmd --src=/build/repo/src/cf --ibconnection /F/build/ib
+vanessa-runner v2.5.0
+ИНФОРМАЦИЯ - Используется ibcmd платформы 8.3.26.1656
+ИНФОРМАЦИЯ - Создали базу данных для /F"/build/ib"
+ИНФОРМАЦИЯ - Запускаем загрузку конфигурации из исходников...
+ИНФОРМАЦИЯ - Создана информационная база из исходников.
+ИНФОРМАЦИЯ - Запускаю обновление конфигурации БД
+ИНФОРМАЦИЯ - Обновление конфигурации БД завершено.
+ИНФОРМАЦИЯ - Инициализация завершена
+[8mha:////4Idp9X48GVeXeHt4wd3ZCuxIH7c/zOGp+T5ouHGCcxYdAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyk8LGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALNPULftp/b+DYZkJuy+AAAA[0m[Pipeline] sh
++ sleep 30
++ Xvfb :0 -screen 0 1440x900x16
++ ibsrv --db-path=/build/ib --name=ib
+1C:Enterprise 8.3 (x86-64)  (8.3.26.1656) Stand-alone Server started. Ctrl+C to exit.
+1C:Enterprise 8.3 (x86-64)  (8.3.26.1656) Stand-alone Server ready.
++ cd /build/repo
++ vrunner vanessa --ibconnection /Slocalhost\ib
+vanessa-runner v2.5.0
+ИНФОРМАЦИЯ - Используется версия платформы 8.3.26.1656
+ИНФОРМАЦИЯ - Тестирую поведение с помощью фреймворка Vanessa-ADD (Vanessa Automation Driven Development)
+ИНФОРМАЦИЯ - Выполняю команду/действие в режиме 1С:Предприятие
+ИНФОРМАЦИЯ - Выполнение команды/действия в режиме 1С:Предприятие завершено.
+ОШИБКА - Получен неожиданный/неверный результат работы - Не найден файл статуса /build/repo/build/reports/BuildStatus.log
+Возможно, работа 1С:Предприятие завершилась некорректно. Например, указана неверная версия платформы.
+Или возникла ошибка при запуске. Проверьте журнал регистрации в ИБ.
+Вывод от 1С:Предприятие:
+Неопределена информационная база
+
+[8mha:////4MUiKkET3OoY+aPHexY/HYmNQIYoIY2mPbfOpO/EHsKFAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyk8bCsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DXO/JP++AAAA[0m[Pipeline] }
+[8mha:////4P1zA04oiHuxh395YOQSdZ6+sEC6ixk895kba6rk6ZJwAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqJAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbNxxce5e+AAAA[0m[Pipeline] // script
+Post stage
+[8mha:////4C+n6vcg3Z+OnMu9ABFe1qvlLMGuCHkq2bvKxkl9qeDLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUsSHE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dvd7Md5mfxAQHrlXbCAAAA[0m[Pipeline] script
+[8mha:////4Lj4IqKyaZ3vxWqNdWB6FFqr9NRwtP+3V3EFtvEAWEigAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQH4j6CMwgAAAA==[0m[Pipeline] {
+[8mha:////4AhI5AxNlMBiux5pxKW0D3oxYizh+quPXvdixCy9mWQYAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICokRUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfewYmQ+b4AAAA=[0m[Pipeline] sh
++ pkill ibsrv
+[8mha:////4DFIS2UAM19Atv6/AkbKKT2EYK7o4p+fLqNsAQ1CVJhWAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfeAtq90r4AAAA=[0m[Pipeline] sh
++ pkill Xvfb
+[8mha:////4EPVViFKk3EpqLT6LnFCyyywUg8F6+LnAQUaTD2CcYp7AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKClBJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fvKbXNb4AAAA=[0m[Pipeline] }
+[8mha:////4IbldNmVERmUVFlNyj/PcoYWMNWK5vhqh5Q1TMrJP0TOAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAQ1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw/hHxVIvgAAAA==[0m[Pipeline] // script
+[8mha:////4N2PN6yFTEt6/9TZViK8YzXnB01tmGQQd9C/Dt7aLj/0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Iddu+wHgdJX6vgAAAA==[0m[Pipeline] }
+$ docker stop --time=1 e1edc5742f885bdd3c951ca647a326c84aabadf252020aab51dbe5bf621fc204
+$ docker rm -f --volumes e1edc5742f885bdd3c951ca647a326c84aabadf252020aab51dbe5bf621fc204
+[8mha:////4O6oCxmCYG9zox7GBMeuRnjjG7ZLI/LhbhTqa+5aJ88SAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihISEUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu32u7eEDKe3wLr4AAAA=[0m[Pipeline] // withDockerContainer
+[8mha:////4AMOR3hr9w9uol5vzbeQ3kZ65KcRlAmutQeAmzQhs5DZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7m2uw8E535yvgAAAA==[0m[Pipeline] }
+[8mha:////4KlKwfhR/ILJLI43IQKavdC4z1BGkCqS5NjZKbVEc9+NAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiiAYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w9rBCEavgAAAA==[0m[Pipeline] // withDockerRegistry
+[8mha:////4PEbQ6LIh4Onqe/KPyA0aJvP/TeNsPvY2O1WRqx7IVJWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICokIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Iddu+wFY53qmvgAAAA==[0m[Pipeline] }
+[8mha:////4FFlAdEu+vjgbncI2Jq15ZLHdNU5Iu1VMmFkXDIvPJ9BAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKhoEGIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPi8Y5/L0AAAA=[0m[Pipeline] // withEnv
+[8mha:////4MUIRkCKgtWsWagLsMlbjtobhnfXBnz8ZPO64g8z8cbqAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREgUSoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9tBdn+A63fXra9AAAA[0m[Pipeline] }
+[8mha:////4Hex1tzW8ZpmaRnBC+acYJBVLNkqpwgrLOxPhbUGJ69xAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREBIFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9tBdn+A+y4QWG9AAAA[0m[Pipeline] // node
+[8mha:////4EvlvLhrfJ2E+t6nZJQgZ02SbV+5WdPKlZUag+XLdjT4AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpQDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPyqEmK70AAAA=[0m[Pipeline] }
+[8mha:////4CEcAFS+qVxYPCwl9aQa8F3co/j/zr5OaGlbs9SKgJ7PAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0WDlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyshRk+w9gLA8AvQAAAA==[0m[Pipeline] // stage
+[8mha:////4Ckf9NYohcXrj1xzZBH69WwWIp2kieyGqGropmuBEcKnAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYTThApR0VpueIGJjXFi3QX7QlLxIr7GHzBEomKrnZVW83xBlSIcKDrRWew9ptaLIYwuNzFR7C+BJtHRWbSEiYIVyk6KjD0uqIgtLClKWElYW2wDJY+OYSM7fdd10OjqE8e87SWU3tzgAYXMZtaRvzBH2F5Hkwh/nr8CmAeGomEom93nWL0BolrfU8EAAAA=[0m[Pipeline] stage
+[8mha:////4FKkU8TcfC1QoSQelcCHbvx2H/2OyDWwct1/2f+PpTAPAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] { (Generate Allure Report)
+Stage "Generate Allure Report" skipped due to earlier failure(s)
+[8mha:////4B+v0IzKcpCsbLYtPyH2tFVpOd0DNc8lWxA/TYcuL7BxAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN+EEkMO+AAAA[0m[Pipeline] getContext
+[8mha:////4HNQoP3/6PKcZ6rfmP6E0TZj12OOM/KdvKuR3j61N084AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEDW5U8vgAAAA==[0m[Pipeline] }
+[8mha:////4DoG8dML2WLlunEA48eLIAXH3uKaSLCYirl7KjCLrugfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSQIEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7NxzZwG6+AAAA[0m[Pipeline] // stage
+[8mha:////4Og6V7WPgYdntOUr7RNdB8am454FW9wqA3+l8vwSnlSiAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJYaOVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfI91tBtvsAk2nUSb0AAAA=[0m[Pipeline] }
+[8mha:////4CRkVyIKO+IRyVkGRES2B8SCOxUqjMWqHBeoV2M+HAcOAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQlSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPgNXQ6r0AAAA=[0m[Pipeline] // withEnv
+[8mha:////4B4oCuqzhtx5bmktzTYT23k/8QQaEIVFGStt/HdoXbCdAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkJE7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8F+b4UZOUHxp932r0AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

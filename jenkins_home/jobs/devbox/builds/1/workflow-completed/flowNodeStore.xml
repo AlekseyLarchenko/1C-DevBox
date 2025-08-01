@@ -1,0 +1,981 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<linked-hash-map>
+  <entry>
+    <string>2</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="org.jenkinsci.plugins.workflow.graph.FlowStartNode" plugin="workflow-api@1380.ve03e7a_63d139">
+        <parentIds/>
+        <id>2</id>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035348711</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>3</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>2</string>
+        </parentIds>
+        <id>3</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4173.v4a_1fd14533f1">
+          <arguments>
+            <entry>
+              <string>name</string>
+              <string>Run in Container</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035352369</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>4</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>3</string>
+        </parentIds>
+        <id>4</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1380.ve03e7a_63d139"/>
+        <wf.a.LabelAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <displayName>Run in Container</displayName>
+        </wf.a.LabelAction>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035352390</startTime>
+        </wf.a.TimingAction>
+        <wf.a.TagsAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <tags>
+            <entry>
+              <string>STAGE_STATUS</string>
+              <string>FAILED_AND_CONTINUED</string>
+            </entry>
+          </tags>
+        </wf.a.TagsAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>5</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>4</string>
+        </parentIds>
+        <id>5</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4173.v4a_1fd14533f1">
+          <arguments>
+            <entry>
+              <string>label</string>
+              <null/>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035353142</startTime>
+        </wf.a.TimingAction>
+        <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl plugin="workflow-durable-task-step@1442.vb_a_b_f5f3da_9f9">
+          <id>6</id>
+        </org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl>
+        <s.a.WorkspaceActionImpl>
+          <node>devbox</node>
+          <path>/home/aleksey/project/1C-DevBox/agent_home/workspace/devbox</path>
+          <labels class="sorted-set"/>
+        </s.a.WorkspaceActionImpl>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>6</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>5</string>
+        </parentIds>
+        <id>6</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1380.ve03e7a_63d139"/>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035353337</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>7</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>6</string>
+        </parentIds>
+        <id>7</id>
+        <startId>6</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1380.ve03e7a_63d139"/>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035354550</startTime>
+        </wf.a.TimingAction>
+        <wf.a.ErrorAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <error class="hudson.remoting.ProxyException">
+            <detailMessage>java.net.MalformedURLException: unknown protocol: localhost</detailMessage>
+            <stackTrace>
+              <trace>java.base/java.net.URL.&lt;init&gt;(Unknown Source)</trace>
+              <trace>java.base/java.net.URL.&lt;init&gt;(Unknown Source)</trace>
+              <trace>java.base/java.net.URL.&lt;init&gt;(Unknown Source)</trace>
+              <trace>PluginClassLoader for docker-commons//org.jenkinsci.plugins.docker.commons.credentials.DockerRegistryEndpoint.getEffectiveUrl(DockerRegistryEndpoint.java:159)</trace>
+              <trace>PluginClassLoader for docker-commons//org.jenkinsci.plugins.docker.commons.credentials.DockerRegistryEndpoint.imageName(DockerRegistryEndpoint.java:339)</trace>
+              <trace>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</trace>
+              <trace>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)</trace>
+              <trace>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)</trace>
+              <trace>java.base/java.lang.reflect.Method.invoke(Unknown Source)</trace>
+              <trace>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)</trace>
+              <trace>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)</trace>
+              <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)</trace>
+              <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:46)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.sandbox.DefaultInvoker.methodCall(DefaultInvoker.java:20)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.LoggingInvoker.methodCall(LoggingInvoker.java:118)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.Docker$Image.toQualifiedImageName(Docker.groovy:117)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.Docker$Image.imageName(Docker.groovy:121)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.Docker$Image.inside(Docker.groovy:126)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.Docker.node(Docker.groovy:66)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.Docker$Image.inside(Docker.groovy:125)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.declarative.DockerPipelineScript.runImage(DockerPipelineScript.groovy:53)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.declarative.AbstractDockerPipelineScript.configureRegistry(AbstractDockerPipelineScript.groovy:58)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.declarative.AbstractDockerPipelineScript.run(AbstractDockerPipelineScript.groovy:46)</trace>
+              <trace>org.jenkinsci.plugins.pipeline.modeldefinition.agent.CheckoutScript.checkoutAndRun(CheckoutScript.groovy:66)</trace>
+              <trace>org.jenkinsci.plugins.pipeline.modeldefinition.agent.CheckoutScript.doCheckout2(CheckoutScript.groovy:46)</trace>
+              <trace>org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.LabelScript.run(LabelScript.groovy:49)</trace>
+              <trace>___cps.transform___(Native Method)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:90)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:114)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:83)</trace>
+              <trace>jdk.internal.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)</trace>
+              <trace>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)</trace>
+              <trace>java.base/java.lang.reflect.Method.invoke(Unknown Source)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.LocalVariableBlock$LocalVariable.get(LocalVariableBlock.java:39)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.LocalVariableBlock.evalLValue(LocalVariableBlock.java:28)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock$BlockImpl.eval(LValueBlock.java:55)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock.eval(LValueBlock.java:16)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.Next.step(Next.java:83)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:147)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:17)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:49)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:181)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:437)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:345)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:298)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService.lambda$wrap$4(CpsVmExecutorService.java:140)</trace>
+              <trace>java.base/java.util.concurrent.FutureTask.run(Unknown Source)</trace>
+              <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:139)</trace>
+              <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+              <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)</trace>
+              <trace>jenkins.util.ErrorLoggingExecutorService.lambda$wrap$0(ErrorLoggingExecutorService.java:51)</trace>
+              <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)</trace>
+              <trace>java.base/java.util.concurrent.FutureTask.run(Unknown Source)</trace>
+              <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)</trace>
+              <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.call(CpsVmExecutorService.java:53)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.call(CpsVmExecutorService.java:50)</trace>
+              <trace>org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:136)</trace>
+              <trace>org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:275)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService.lambda$categoryThreadFactory$0(CpsVmExecutorService.java:50)</trace>
+              <trace>java.base/java.lang.Thread.run(Unknown Source)</trace>
+            </stackTrace>
+            <suppressedExceptions>
+              <wf.a.ErrorAction_-ErrorId>
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+                <uuid>14e2a6fb-8fb4-4e72-8e83-e2644073b763</uuid>
+              </wf.a.ErrorAction_-ErrorId>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>8</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>7</string>
+        </parentIds>
+        <id>8</id>
+        <startId>5</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035354668</startTime>
+        </wf.a.TimingAction>
+        <wf.a.ErrorAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <error class="hudson.remoting.ProxyException">
+            <detailMessage>java.net.MalformedURLException: unknown protocol: localhost</detailMessage>
+            <stackTrace>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[2]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[3]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[4]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[5]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[6]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[7]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[8]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[9]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[10]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[11]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[12]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[13]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[14]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[15]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[16]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[17]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[18]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[19]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[20]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[21]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[22]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[23]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[24]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[25]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[26]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[27]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[28]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[29]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[30]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[31]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[32]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[33]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[34]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[35]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[36]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[37]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[38]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[39]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[40]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[41]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[42]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[43]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[44]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[45]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[46]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[47]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[48]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[49]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[50]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[51]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[52]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[53]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[54]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[55]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[56]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[57]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[58]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[59]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[60]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[61]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[62]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[63]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[64]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[65]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[66]"/>
+            </stackTrace>
+            <suppressedExceptions>
+              <hudson.remoting.ProxyException>
+                <detailMessage>org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 14e2a6fb-8fb4-4e72-8e83-e2644073b763</detailMessage>
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+              </hudson.remoting.ProxyException>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>9</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>8</string>
+        </parentIds>
+        <id>9</id>
+        <startId>4</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1380.ve03e7a_63d139"/>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035354834</startTime>
+        </wf.a.TimingAction>
+        <wf.a.ErrorAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <error class="hudson.remoting.ProxyException">
+            <detailMessage>java.net.MalformedURLException: unknown protocol: localhost</detailMessage>
+            <stackTrace>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[2]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[3]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[4]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[5]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[6]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[7]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[8]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[9]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[10]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[11]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[12]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[13]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[14]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[15]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[16]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[17]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[18]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[19]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[20]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[21]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[22]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[23]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[24]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[25]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[26]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[27]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[28]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[29]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[30]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[31]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[32]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[33]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[34]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[35]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[36]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[37]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[38]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[39]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[40]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[41]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[42]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[43]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[44]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[45]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[46]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[47]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[48]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[49]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[50]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[51]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[52]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[53]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[54]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[55]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[56]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[57]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[58]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[59]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[60]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[61]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[62]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[63]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[64]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[65]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[66]"/>
+            </stackTrace>
+            <suppressedExceptions>
+              <hudson.remoting.ProxyException>
+                <detailMessage>org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 14e2a6fb-8fb4-4e72-8e83-e2644073b763</detailMessage>
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+              </hudson.remoting.ProxyException>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>10</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>9</string>
+        </parentIds>
+        <id>10</id>
+        <startId>3</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035354915</startTime>
+        </wf.a.TimingAction>
+        <wf.a.ErrorAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <error class="hudson.remoting.ProxyException">
+            <detailMessage>java.net.MalformedURLException: unknown protocol: localhost</detailMessage>
+            <stackTrace>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[2]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[3]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[4]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[5]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[6]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[7]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[8]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[9]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[10]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[11]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[12]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[13]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[14]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[15]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[16]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[17]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[18]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[19]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[20]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[21]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[22]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[23]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[24]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[25]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[26]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[27]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[28]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[29]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[30]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[31]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[32]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[33]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[34]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[35]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[36]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[37]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[38]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[39]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[40]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[41]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[42]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[43]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[44]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[45]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[46]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[47]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[48]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[49]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[50]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[51]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[52]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[53]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[54]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[55]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[56]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[57]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[58]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[59]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[60]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[61]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[62]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[63]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[64]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[65]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[66]"/>
+            </stackTrace>
+            <suppressedExceptions>
+              <hudson.remoting.ProxyException>
+                <detailMessage>org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 14e2a6fb-8fb4-4e72-8e83-e2644073b763</detailMessage>
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+              </hudson.remoting.ProxyException>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>11</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>10</string>
+        </parentIds>
+        <id>11</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4173.v4a_1fd14533f1">
+          <arguments>
+            <entry>
+              <string>name</string>
+              <string>Generate Allure</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035354971</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>12</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>11</string>
+        </parentIds>
+        <id>12</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1380.ve03e7a_63d139"/>
+        <wf.a.LabelAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <displayName>Generate Allure</displayName>
+        </wf.a.LabelAction>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035354978</startTime>
+        </wf.a.TimingAction>
+        <wf.a.TagsAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <tags>
+            <entry>
+              <string>STAGE_STATUS</string>
+              <string>SKIPPED_FOR_FAILURE</string>
+            </entry>
+          </tags>
+        </wf.a.TagsAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>13</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepAtomNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>12</string>
+        </parentIds>
+        <id>13</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.GetContextStep</descriptorId>
+      </node>
+      <actions>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4173.v4a_1fd14533f1">
+          <arguments>
+            <entry>
+              <string>type</string>
+              <wf.a.ArgumentsAction_-NotStoredReason>UNSERIALIZABLE</wf.a.ArgumentsAction_-NotStoredReason>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035355156</startTime>
+        </wf.a.TimingAction>
+        <s.a.LogStorageAction/>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>14</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>13</string>
+        </parentIds>
+        <id>14</id>
+        <startId>12</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1380.ve03e7a_63d139"/>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035355237</startTime>
+        </wf.a.TimingAction>
+        <wf.a.ErrorAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <error class="hudson.remoting.ProxyException">
+            <detailMessage>java.net.MalformedURLException: unknown protocol: localhost</detailMessage>
+            <stackTrace>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[2]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[3]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[4]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[5]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[6]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[7]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[8]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[9]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[10]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[11]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[12]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[13]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[14]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[15]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[16]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[17]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[18]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[19]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[20]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[21]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[22]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[23]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[24]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[25]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[26]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[27]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[28]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[29]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[30]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[31]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[32]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[33]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[34]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[35]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[36]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[37]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[38]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[39]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[40]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[41]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[42]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[43]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[44]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[45]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[46]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[47]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[48]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[49]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[50]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[51]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[52]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[53]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[54]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[55]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[56]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[57]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[58]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[59]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[60]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[61]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[62]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[63]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[64]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[65]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[66]"/>
+            </stackTrace>
+            <suppressedExceptions>
+              <hudson.remoting.ProxyException>
+                <detailMessage>org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 14e2a6fb-8fb4-4e72-8e83-e2644073b763</detailMessage>
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+              </hudson.remoting.ProxyException>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>15</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4173.v4a_1fd14533f1">
+        <parentIds>
+          <string>14</string>
+        </parentIds>
+        <id>15</id>
+        <startId>11</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035355333</startTime>
+        </wf.a.TimingAction>
+        <wf.a.ErrorAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <error class="hudson.remoting.ProxyException">
+            <detailMessage>java.net.MalformedURLException: unknown protocol: localhost</detailMessage>
+            <stackTrace>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[2]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[3]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[4]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[5]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[6]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[7]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[8]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[9]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[10]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[11]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[12]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[13]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[14]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[15]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[16]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[17]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[18]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[19]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[20]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[21]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[22]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[23]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[24]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[25]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[26]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[27]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[28]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[29]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[30]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[31]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[32]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[33]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[34]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[35]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[36]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[37]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[38]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[39]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[40]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[41]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[42]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[43]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[44]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[45]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[46]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[47]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[48]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[49]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[50]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[51]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[52]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[53]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[54]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[55]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[56]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[57]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[58]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[59]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[60]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[61]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[62]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[63]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[64]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[65]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[66]"/>
+            </stackTrace>
+            <suppressedExceptions>
+              <hudson.remoting.ProxyException>
+                <detailMessage>org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 14e2a6fb-8fb4-4e72-8e83-e2644073b763</detailMessage>
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+              </hudson.remoting.ProxyException>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+        <wf.a.ErrorAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <error class="hudson.remoting.ProxyException">
+            <detailMessage>java.net.MalformedURLException: unknown protocol: localhost</detailMessage>
+            <stackTrace>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[2]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[3]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[4]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[5]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[6]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[7]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[8]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[9]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[10]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[11]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[12]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[13]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[14]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[15]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[16]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[17]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[18]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[19]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[20]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[21]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[22]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[23]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[24]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[25]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[26]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[27]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[28]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[29]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[30]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[31]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[32]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[33]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[34]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[35]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[36]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[37]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[38]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[39]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[40]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[41]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[42]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[43]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[44]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[45]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[46]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[47]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[48]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[49]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[50]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[51]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[52]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[53]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[54]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[55]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[56]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[57]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[58]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[59]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[60]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[61]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[62]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[63]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[64]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[65]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[66]"/>
+            </stackTrace>
+            <suppressedExceptions>
+              <hudson.remoting.ProxyException>
+                <detailMessage>org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 14e2a6fb-8fb4-4e72-8e83-e2644073b763</detailMessage>
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+              </hudson.remoting.ProxyException>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>16</string>
+    <Tag plugin="workflow-support@976.vb_d9493c2eb_09">
+      <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@1380.ve03e7a_63d139">
+        <parentIds>
+          <string>15</string>
+        </parentIds>
+        <id>16</id>
+        <startId>2</startId>
+        <result>
+          <name>FAILURE</name>
+          <ordinal>2</ordinal>
+          <color>RED</color>
+          <completeBuild>true</completeBuild>
+        </result>
+      </node>
+      <actions>
+        <wf.a.ErrorAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <error class="hudson.remoting.ProxyException">
+            <detailMessage>java.net.MalformedURLException: unknown protocol: localhost</detailMessage>
+            <stackTrace>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[2]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[3]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[4]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[5]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[6]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[7]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[8]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[9]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[10]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[11]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[12]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[13]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[14]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[15]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[16]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[17]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[18]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[19]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[20]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[21]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[22]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[23]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[24]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[25]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[26]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[27]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[28]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[29]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[30]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[31]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[32]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[33]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[34]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[35]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[36]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[37]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[38]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[39]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[40]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[41]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[42]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[43]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[44]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[45]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[46]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[47]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[48]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[49]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[50]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[51]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[52]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[53]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[54]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[55]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[56]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[57]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[58]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[59]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[60]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[61]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[62]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[63]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[64]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[65]"/>
+              <trace reference="../../../../../../../entry[6]/Tag/actions/wf.a.ErrorAction/error/stackTrace/trace[66]"/>
+            </stackTrace>
+            <suppressedExceptions>
+              <hudson.remoting.ProxyException>
+                <detailMessage>org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 14e2a6fb-8fb4-4e72-8e83-e2644073b763</detailMessage>
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+              </hudson.remoting.ProxyException>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+        <wf.a.TimingAction plugin="workflow-api@1380.ve03e7a_63d139">
+          <startTime>1754035355402</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+</linked-hash-map>

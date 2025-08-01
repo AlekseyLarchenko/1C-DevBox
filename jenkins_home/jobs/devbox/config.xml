@@ -1,0 +1,117 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1540.v295eccc9778f">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2258.v4e96d2b_da_f9b_"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2258.v4e96d2b_da_f9b_">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4173.v4a_1fd14533f1">
+    <script>pipeline {
+    agent none
+
+    environment {
+        DISPLAY = &quot;:0&quot;
+        DISPLAY_WIDTH = &quot;1440&quot;
+        DISPLAY_HEIGHT = &quot;900&quot;
+    }
+
+    stages {
+        stage(&apos;Prepare and Run Tests&apos;) {
+            agent {
+                docker {
+                    image &apos;localhost:5000/test-runner:8.3.26.1656&apos;
+                    registryUrl &apos;http://localhost:5000&apos;
+                    args &apos;&apos;&apos;-u root 
+                           -v $WORKSPACE:/workspace:rw 
+                           -p 5900:5900
+                           -e DISPLAY=$DISPLAY
+                           -e DISPLAY_WIDTH=$DISPLAY_WIDTH
+                           -e DISPLAY_HEIGHT=$DISPLAY_HEIGHT
+                           --entrypoint=&quot;&quot;&apos;&apos;&apos;
+                    alwaysPull false
+                }
+            }
+            steps {
+                script {
+                    env.BUILD_DIR = &apos;/build&apos;
+                    env.IB_NAME = &apos;ib&apos; // Имя информационной базы
+                    
+                    // 1. Подготовка окружения
+                    sh &quot;&quot;&quot;
+                        mkdir -p $BUILD_DIR
+                        echo &quot;Workspace contents:&quot;
+                        ls -la /workspace
+                    &quot;&quot;&quot;
+                    
+                    // 2. Клонирование репозитория
+                    sh &apos;git clone -v https://gitflic.ru/project/nivanchenko/otus_arch_demo1.git $BUILD_DIR/repo&apos;
+                    
+                    // 3. Инициализация базы 1С
+                    sh &apos;vrunner init-dev --ibcmd --src=$BUILD_DIR/repo/src/cf --ibconnection /F$BUILD_DIR/ib&apos;
+                    
+                    // 4. Запуск Xvfb и тестов
+                    sh &quot;&quot;&quot;
+                        # Запускаем виртуальный X-сервер
+                        Xvfb :0 -screen 0 ${DISPLAY_WIDTH}x${DISPLAY_HEIGHT}x16 &amp;
+                        
+                        # Запускаем сервер 1С в фоне
+                        ibsrv --db-path=$BUILD_DIR/ib --name=$IB_NAME &amp;
+                        
+                        # Ждем запуска серверов
+                        sleep 30
+                        
+                        # Проверяем доступность базы
+                        if [ ! -d &quot;$BUILD_DIR/ib&quot; ]; then
+                            echo &quot;ERROR: Database directory not found!&quot;
+                            exit 1
+                        fi
+                        
+                        # Выполняем тесты (используем только --ibconnection)
+                        cd $BUILD_DIR/repo
+                        vrunner vanessa --ibconnection &quot;/F$BUILD_DIR/ib&quot;
+                        
+                        # Копируем отчеты
+                        cp -r $BUILD_DIR/repo/build/reports/allurereport/БСП /workspace/allure-report || echo &quot;No Allure reports found&quot;
+                    &quot;&quot;&quot;
+                }
+            }
+            post {
+                always {
+                    script {
+                        // 5. Остановка серверов
+                        sh &apos;pkill ibsrv || true&apos;
+                        sh &apos;pkill Xvfb || true&apos;
+                    }
+                }
+            }
+        }
+        
+        stage(&apos;Generate Allure Report&apos;) {
+            agent { label &apos;devbox&apos; }
+            when {
+                expression { fileExists(&apos;allure-report&apos;) }
+            }
+            steps {
+                allure([
+                    includeProperties: false,
+                    jdk: &apos;&apos;,
+                    properties: [],
+                    reportBuildPolicy: &apos;ALWAYS&apos;,
+                    results: [[path: &apos;allure-report&apos;]]
+                ])
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
