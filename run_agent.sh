@@ -1,0 +1,1 @@
+java -jar agent.jar -url http://localhost:8080/ -secret a2607361f8ed8a2ba7d964b0971d7703e631acf2689dbfbb950e52213dacd8ca -name devbox -webSocket -workDir "/home/aleksy/projects/agent_home"
